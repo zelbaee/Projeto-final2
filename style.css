@@ -58,8 +58,8 @@ nav.navbar {
     background-color: #ffdede5b;
 }
 
-.whatsapp-float,
-.instagram-float {
+.whatsapp-balao,
+.instagram-balao {
   position: fixed;
   width: 60px;
   height: 60px;
@@ -72,34 +72,34 @@ nav.navbar {
   z-index: 1000;
   transition: 0.3s ease;
 }
-.whatsapp-float {
+.whatsapp-balao {
   bottom: 20px;
   background-color: #25d366;
 }
 
-.instagram-float {
+.instagram-balao {
   bottom: 90px;
   background: radial-gradient(circle at 30% 110%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
-.whatsapp-float:hover,
-.instagram-float:hover {
+.whatsapp-balao:hover,
+.instagram-balao:hover {
     transform: scale(1.2);
 }
-.whatsapp-float img,
-.instagram-float img {
+.whatsapp-balao img,
+.instagram-balao img {
   filter: invert(1);
 }
 @media (max-width: 480px) {
-    .whatsapp-float,
-    .instagram-float {
+    .whatsapp-balao,
+    .instagram-balao {
         width: 30px;
         height: 30px;
     }
-    .instagram-float {
+    .instagram-balao {
         bottom: 60px;
     }
-    .whatsapp-float img,
-    .instagram-float img {
+    .whatsapp-balao img,
+    .instagram-balao img {
         width: 20px;
     }
 }
@@ -152,7 +152,8 @@ main {
     height: auto;
 }
 .nome {
-    padding-top: 20px;
+    padding-top: 60px;
+    padding-bottom: 20px;
     text-align: center;
 }
 .LDM {
@@ -161,22 +162,112 @@ main {
     gap: 5px;
     margin: 0;
     padding: 0;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     font-size: 16px;
     font-weight: 600;
     list-style: none;
 }
 .resumo {
     font-weight: 500;
+    padding-bottom: 30px;
 }
 .sobre {
-    padding-top: 20px;
+    padding-top: 30px;
+    border-top: 1px solid #facccc;
+}
+.apresentaçao {
+    padding-bottom: 30px;
+}
+.apresentaçao p {
+    line-height: 1;
 }
 p {
     font-weight: 400;
     padding: 0px 20px 0px 20px;
 }
+.diferenciais .topico {
+    font-weight: 800;
+}
+.diferenciais {
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid #facccc;
+    border-bottom: 1px solid #facccc;
+    list-style: none;
+}
+.serviços {
+    padding-top: 30px;
+}
+.serviços-lista {
+    display: grid;
+    justify-items: center;
+    
 
+    list-style-type: none;
+    
+    padding: 0;
+    padding-bottom: 5px;
+    margin: 0;
+
+    border-bottom: 1px solid #facccc;
+}
+.serviços-lista li {
+    border-top: 1px solid #facccc;
+    padding-top: 10px;
+    width: 80%;
+}
+.depoimentos {
+    display: grid;
+    justify-items: center;
+    background-color: #fcd2d2;
+
+    border-radius: 8px;
+    box-shadow: 3px 2px 2px #faa3a3;
+
+    margin: 10px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.depoimentos1, .depoimentos2, .depoimentos3 {
+    border: 1px solid #fabdbd;
+    border-radius: 8px;
+    box-shadow: 3px 2px 2px #faa3a3;
+    width: 80%;
+    padding: 10px;
+    margin: 5px;
+}
+hr {
+    border: 1px solid #facccc;
+}
+.FAQ {
+    display: grid;
+    justify-items: center;
+    background-color: #fcd2d2;
+
+    border-radius: 8px;
+    box-shadow: 3px 2px 2px #faa3a3;
+
+    margin: 10px;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.FAQ div {
+    border: 1px solid #fabdbd;
+    border-radius: 8px;
+    box-shadow: 3px 2px 2px #faa3a3;
+
+    width: 80%;
+    padding: 10px;
+    margin: 5px;
+}
 footer {
     background-color: #ffe2e2;
     padding: 20px;
