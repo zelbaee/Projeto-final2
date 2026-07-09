@@ -18,6 +18,16 @@ header nav div {
     font-size: 25px;
 }
 
+.construcao {
+    display: flex;
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+}
+
 .logo {
     object-fit: cover;
     width: 30%;
@@ -207,6 +217,18 @@ legend {
     display: flex;
     justify-content: center;
 }
+#alertaItem {
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    #alertaItem {
+        grid-column: span 2;
+    }
+}
 
 .mb-3 {
     grid-column: span 3;
@@ -335,6 +357,7 @@ p {
     padding-bottom: 30px;
 }
 .depoimentos1, .depoimentos2, .depoimentos3 {
+    background-color: #ffe6e65b;
     border: 1px solid #fabdbd;
     border-radius: 8px;
     box-shadow: 3px 2px 2px #faa3a3;
@@ -360,6 +383,7 @@ hr {
     padding-bottom: 30px;
 }
 .FAQ div {
+    background-color: #ffe6e65b;
     border: 1px solid #fabdbd;
     border-radius: 8px;
     box-shadow: 3px 2px 2px #faa3a3;
@@ -449,5 +473,3 @@ footer {
     padding: 20px;
     text-align: center;
 }
-
-

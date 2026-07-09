@@ -4,14 +4,14 @@ document.getElementById('btnEnviar').addEventListener('click', function () {
     const servicos = Array.from(servicosMarcados).map(input => input.value);
 
     if (servicos.length === 0) {
-        alert('Por favor, selecione pelo menos um serviço.');
+        mostrarErro('Por favor, selecione pelo menos um serviço.');
         return;
     }
 
     const dataHora = document.getElementById('data').value;
 
     if (!dataHora) {
-        alert('Por favor, selecione a data e o horário.');
+        mostrarErro('Por favor, selecione a data e o horário.');
         return;
     }
 
@@ -27,10 +27,24 @@ document.getElementById('btnEnviar').addEventListener('click', function () {
 
     const link = `https://wa.me/${numeroEmpresa}?text=${encodeURIComponent(mensagem)}`;
 
+    document.getElementById('alertaItem').classList.add('d-none');
+
     window.open(link, '_blank');
 
     
 });
+
+function mostrarErro(mensagem) {
+    const alerta = document.getElementById('alertaItem');
+    const texto = document.getElementById('textoAlerta');
+    
+    texto.innerText = mensagem;
+    alerta.classList.remove('d-none'); 
+}
+
+function fecharAlertaManual() {
+    document.getElementById('alertaItem').classList.add('d-none');
+}
 
 const elementos = document.querySelectorAll('.reveal');
 
@@ -38,8 +52,8 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visivel');
-        } else {
-            entry.target.classList.remove('visivel');
+        // } else {
+            // entry.target.classList.remove('visivel');
         }
     });
 }, {

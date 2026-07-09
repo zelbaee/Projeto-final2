@@ -108,6 +108,11 @@
             <fieldset class="opcoes-horario">
                 <legend class="reveal">Agende seu Horário</legend>
 
+                <div id="alertaItem" class="alert alert-danger alert-dismissible fade show d-none reveal" role="alert">
+                    <span id="textoAlerta"></span>
+                    <button type="button" class="btn-close" onclick="fecharAlertaManual()" aria-label="Close"></button>
+                  </div>
+
                 <div class="mb-3 reveal">
                     <label for="data" class="form-label"></label>
                     <input type="datetime-local" class="form-control" id="data"> 
