@@ -193,6 +193,7 @@ legend {
 .formulario {
     padding-top: 30px;
     padding-bottom: 40px;
+    margin: 0 auto;
 
     border-top: 1px solid #facccc;
 }
@@ -205,6 +206,7 @@ legend {
     width: 80%;
     gap: 5px;
     row-gap: 0;
+    margin: 0 auto;
 }
 @media (max-width: 768px) {
     .opcoes-horario {
@@ -216,6 +218,7 @@ legend {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
 }
 #alertaItem {
     grid-column: span 3;
